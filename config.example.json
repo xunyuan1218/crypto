@@ -1,0 +1,34 @@
+{
+  "symbols": ["BTCUSDT", "HYPEUSDT"],
+  "interval_sec": 30,
+  "lookback_sec": 300,
+  "cooldown_sec": 300,
+  "default_threshold_pct": 1.0,
+  "thresholds": {
+    "BTCUSDT": 0.8,
+    "HYPEUSDT": 2.0
+  },
+  "notifications": {
+    "telegram": {
+      "enabled": false,
+      "bot_token": "",
+      "chat_id": ""
+    },
+    "slack": {
+      "enabled": false,
+      "webhook_url": ""
+    },
+    "discord": {
+      "enabled": false,
+      "webhook_url": ""
+    },
+    "generic_webhook": {
+      "enabled": false,
+      "url": "",
+      "payload_template": {
+        "text": "{message}",
+        "source": "btc-hype-monitor"
+      }
+    }
+  }
+}
